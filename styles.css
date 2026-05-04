@@ -11,13 +11,24 @@ body {
     color: white;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+    padding-top: 40px;
     min-height: 100vh;
 }
 
 body {
     padding-bottom: env(safe-area-inset-bottom);
     padding-top: env(safe-area-inset-top);
+}
+
+.top-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: env(safe-area-inset-top);
+    background: #1e1e2f;
+    z-index: 999;
 }
 
 /* Contenedor */

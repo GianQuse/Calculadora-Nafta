@@ -2,30 +2,23 @@
     box-sizing: border-box;
 }
 
-/* 🔥 Fondo base para Safari (clave para barras) */
+/* 👇 CLAVE para Safari */
 html {
     background: #1e1e2f;
-    height: 100%;
 }
 
 body {
     margin: 0;
     padding: 0;
     font-family: 'Segoe UI', sans-serif;
-
-    /* Fondo principal */
     background: linear-gradient(180deg, #1e1e2f, #2a2a40);
     color: white;
-
     display: flex;
     justify-content: center;
     align-items: center;
-
-    /* 🔥 Altura real en iPhone */
-    min-height: 100vh;
     min-height: 100dvh;
 
-    /* 🔥 Soporte notch + barra inferior */
+    /* Soporte notch iPhone */
     padding-top: env(safe-area-inset-top);
     padding-bottom: env(safe-area-inset-bottom);
 }

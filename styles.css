@@ -11,20 +11,14 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Segoe UI', sans-serif;
-
-    /* 👇 Fondo doble */
-    background-color: #1e1e2f;
-    background-image: linear-gradient(180deg, #1e1e2f, #2a2a40);
-
+    background: linear-gradient(180deg, #1e1e2f, #2a2a40);
     color: white;
-
     display: flex;
     justify-content: center;
     align-items: center;
-
-    /* 👇 Usamos dvh */
     min-height: 100dvh;
 
+    /* Soporte notch iPhone */
     padding-top: env(safe-area-inset-top);
     padding-bottom: env(safe-area-inset-bottom);
 }

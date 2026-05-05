@@ -2,7 +2,11 @@
     box-sizing: border-box;
 }
 
-html,
+/* 👇 CLAVE para Safari */
+html {
+    background: #1e1e2f;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -11,24 +15,12 @@ body {
     color: white;
     display: flex;
     justify-content: center;
-    align-items: flex-start;
-    padding-top: 40px;
+    align-items: center;
     min-height: 100vh;
-}
 
-body {
-    padding-bottom: env(safe-area-inset-bottom);
+    /* Soporte notch iPhone */
     padding-top: env(safe-area-inset-top);
-}
-
-.top-bg {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: env(safe-area-inset-top);
-    background: #1e1e2f;
-    z-index: 999;
+    padding-bottom: env(safe-area-inset-bottom);
 }
 
 /* Contenedor */
@@ -69,6 +61,14 @@ input {
     font-size: 14px;
 }
 
+/* Inputs readonly */
+input[readonly] {
+    background-color: rgba(255, 255, 255, 0.15);
+    color: #e0e0e0;
+    cursor: not-allowed;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
 /* Botón */
 button {
     width: 100%;
@@ -94,17 +94,11 @@ button:hover {
     font-weight: bold;
 }
 
-input[readonly] {
-    background-color: rgba(255, 255, 255, 0.15);
-    color: #e0e0e0;
-    cursor: not-allowed;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-}
-
 /* 📱 Mobile */
 @media (max-width: 480px) {
     body {
-        padding: 15px;
+        padding-left: 15px;
+        padding-right: 15px;
     }
 
     .container {

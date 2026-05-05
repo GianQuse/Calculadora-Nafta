@@ -24,3 +24,14 @@ function calcular() {
     💰 Costo total: $${costoFinal.toLocaleString("es-AR")}
   `;
 }
+
+function borrarCampos() {
+  document.getElementById("dias").value = "";
+  document.getElementById("precio").value = "";
+
+  // Opcional: mantener los readonly o reiniciarlos
+  document.getElementById("kmDia").value = 34;
+  document.getElementById("rendimiento").value = 13;
+
+  document.getElementById("resultado").innerText = "";
+}

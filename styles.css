@@ -77,7 +77,7 @@ input[readonly] {
 }
 
 /* Botón */
-button {
+.btn-calcular {
     width: 100%;
     padding: 12px;
     margin-top: 12px;
@@ -90,7 +90,20 @@ button {
     transition: 0.3s;
 }
 
-button:hover {
+.btn-borrar {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(90deg, #ff416c, #ff4b2b);
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-calcular:hover, .btn-borrar:hover {
     transform: scale(1.03);
 }
 
@@ -120,7 +133,7 @@ button:hover {
         font-size: 16px;
     }
 
-    button {
+    .btn-calcular, .btn-borrar {
         font-size: 16px;
         padding: 14px;
     }

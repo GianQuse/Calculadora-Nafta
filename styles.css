@@ -25,7 +25,6 @@ body {
     /* 🔥 ORDEN IMPORTANTE */
     min-height: 100vh;
     min-height: -webkit-fill-available;
-    min-height: 100dvh;
 
     /* 🔥 Ajuste fino iPhone */
     padding-top: env(safe-area-inset-top);
